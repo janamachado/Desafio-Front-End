@@ -1,16 +1,8 @@
-import { useContext } from "react"
-import { AuthContext } from "../../context/AuthContext"
 import { DivCalculator } from "./styles"
-
 
 const Calculator = ({apiResponse}: any) =>{
 
-    // const {apiResponse, days} = useContext(AuthContext) 
-    const qualquer = Object.values(apiResponse)
-    console.log(qualquer)
-
     return(
-
         apiResponse?.[1] && apiResponse?.[15] && apiResponse?.[30] && apiResponse?.[90] ? 
         (
             <DivCalculator>
@@ -28,19 +20,19 @@ const Calculator = ({apiResponse}: any) =>{
         :
         (
             <DivCalculator>
-                <span>
+                <>
+                    <div>
+                        <h3>VOCÊ RECEBERÁ:</h3>
+                    </div>
                     {
-                        // qualquer.[0]
+                        Object.keys(apiResponse).map((item, index) => ( 
+                        <p key={index}>Em <span>{item} dias: {apiResponse[item].toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} </span></p>
+                        ))
                     }
-
-                </span>
+                </>
             </DivCalculator>
         )
     )
-        
-
-            
-    
 }   
 
 export default Calculator

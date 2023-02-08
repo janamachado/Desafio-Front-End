@@ -1,11 +1,10 @@
 import { useForm } from "react-hook-form"
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useContext, useState } from "react";
+import { useState } from "react";
 
 import Calculator from "../Calculator";
 import { formSchema } from "../../validators/FormSchema";
-import { IRequestCalculator } from "../../interfaces";
-import { AuthContext } from "../../context/AuthContext";
+import { IRequestCalculator, IResponseDays } from "../../interfaces";
 import { Error, FormStyled } from "./styles"
 import { Api } from "../../Services";
 
@@ -14,18 +13,12 @@ const Form = () =>{
 
     const [apiResponse, setApiResponse] = useState<any>(1)
 
-    const [days, setDays] = useState<any>()
-
-
-//    const {getDataForm} = useContext(AuthContext)
-
     const {register, handleSubmit, formState: {errors}
     } = useForm<IRequestCalculator>({
         resolver: yupResolver(formSchema)
     })
 
     const getDataForm = (data: IRequestCalculator) =>{
-        // console.log(data)
 
         let newData = {}
  
@@ -51,8 +44,6 @@ const Form = () =>{
             setApiResponse(res.data)
         })
         .catch((err)=> console.log("Esse é o erro ->", err))
-        setDays(data.days)
-
     }
 
     return(

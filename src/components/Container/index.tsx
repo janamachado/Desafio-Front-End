@@ -1,4 +1,3 @@
-import Calculator from "../Calculator"
 import Form from "../Form"
 import { ContainerDiv, ContentDiv } from "./styles"
 
@@ -9,7 +8,6 @@ const Container = () =>{
             <ContainerDiv>
                 <ContentDiv>
                     <Form />
-                    <Calculator />
                 </ContentDiv>
             </ContainerDiv>
         </div>

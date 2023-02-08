@@ -6,7 +6,7 @@ export const DivCalculator = styled.div`
     justify-content: center;
     align-items: flex-start;
 
-    width: 30%;
+    width: 40%;
     padding-left: 25px ;
     color: #3D75BB;
 
