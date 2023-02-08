@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Calculadora de Antecipação
+
+Sobre o desafio
+Hoje nossos clientes precisam saber quanto custa antecipar uma transação, e para isso, precisamos desenvolver uma calculadora de antecipação para que os mesmos consigam saber quais valores receberão caso optem por antecipar o recebimento.
+
+Você deverá desenvolver o teste seguindo os requisitos abaixo.
+
+Requisitos
+Use componentização.
+Os períodos de recebimento devem ser configuráveis já que a API pode receber uma lista de periódos para realizar os cálculos.
+
+No repositório local rodar o comando yarn para instalar todas as dependências.
+Em seguida rodar o comando yarn star para rodar o servidor local.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
