@@ -1,5 +1,48 @@
 # Calculadora de Antecipação
 
+#### Você pode [acessar aqui a calculadora](https://react-entrega-s1-nu-kenzie-janamachado-janamachado.vercel.app/)
+#### You can [access the calculator here](https://react-entrega-s1-nu-kenzie-janamachado-janamachado.vercel.app/)
+
+Essa aplicação foi desenvolvida para consolidar meus conhecimentos em React.js, componetização, validações de campos com yup, formulários com useForm e react-hook-form, renderização condicional por regras de negócio implementadas.
+
+Essa aplicação foi desenvolvida em TypeScript com React.js.
+
+This application was developed to consolidate my knowledge in React.js, componentization, field validations with yup, forms with useForm and react-hook-form, conditional rendering by implemented business rules.
+
+This aplication was developed by TypeScript with React.js
+
+
+#### Para rodar localmente esse projeto, faça o clone deste repositório:
+#### To run this project locally, clone this repository:
+````
+git clone git@github.com:janamachado/aplicacao-bancaria-reactjs.git
+````
+
+#### Execute o comando para instalar a dependências:
+#### Run command to install dependencies:
+````
+yarn
+````
+
+#### Execute o comando para iniciar o servidor:
+#### Run the command to start the server:
+````
+yarn start
+````
+
+#### Pronto! A aplicação irá abrir em seguida no seu navegador.
+#### Ready! The application will then open in your browser
+
+No primeiro campo o usuário irá informar o valor e em quantas parcelas a venda foi efetuada.
+Em seguida, irformará o percentual MDR (Merchant Discount Rate).
+Por último temos o campo para informar os dias de antecipação, os dias deverão ser separados por vírgulas.
+Exemplo:
+````
+Coloque os dias separados por vírgula
+7, 15, 20
+````
+Se esse campo não for preenchido a calculadora irá trazer os valores para 1, 15, 30 e 90 dias.
+
 Sobre o desafio
 Hoje nossos clientes precisam saber quanto custa antecipar uma transação, e para isso, precisamos desenvolver uma calculadora de antecipação para que os mesmos consigam saber quais valores receberão caso optem por antecipar o recebimento.
 
@@ -9,50 +52,17 @@ Requisitos
 Use componentização.
 Os períodos de recebimento devem ser configuráveis já que a API pode receber uma lista de periódos para realizar os cálculos.
 
-No repositório local rodar o comando yarn para instalar todas as dependências.
-Em seguida rodar o comando yarn star para rodar o servidor local.
+Objetivo
+O objetivo do desafio é validar seus conhecimentos nos seguintes tópicos:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+JavaScript: aproveite o desafio para mostrar tudo o que sabe sobre as novas features da linguagem.
+React: siga boas práticas e mantenha o código idiomático. Busque utilizar features recentes e se mantenha atento a problemas comuns como re-renders desnecessários.
+EXTRA - TypeScript: caso opte por usá-lo, mostre todo o seu domínio.
+Componentização
+CSS: vanilla
+EXTRA - Sass ou Scss: pré-processadores.
+EXTRA - Testes unitários: 
+EXTRA - Testes end-to-end: caso opte por usá-lo, mostre todo o seu domínio.
+#
+#
+Com muito apoio da minha querida Kenzie Academy Brasil <3 Onde 
