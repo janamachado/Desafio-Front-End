@@ -65,4 +65,4 @@ EXTRA - Testes unitários:
 EXTRA - Testes end-to-end: caso opte por usá-lo, mostre todo o seu domínio.
 #
 #
-Com muito apoio da minha querida Kenzie Academy Brasil <3 Onde 
+Com muito apoio da minha querida Kenzie Academy Brasil <3 Onde pude aprender a apreder.
